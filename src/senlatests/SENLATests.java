@@ -23,5 +23,6 @@ public class SENLATests {
             case 5: Quest5Class.getQuest();break;
             case 6: Quest6Class.getQuest();break;
         }
+        scan.close();
     }
 }
