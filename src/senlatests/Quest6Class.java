@@ -14,15 +14,7 @@ public abstract class Quest6Class {
         String val;
         System.out.print("Input String : ");
         val = scan.nextLine();
-        StringBuilder newVal = new StringBuilder();
-        char c; int l = val.length();
-        for (int i = 0; i < l; i++) {
-            c = val.charAt(i);
-            if (c >= '0' && c <= '9') {
-            } else {
-                newVal.append(c);
-            }
-        }
+        String newVal = val.replaceAll("\\d+", "");
         System.out.println("Output String : " + newVal.toString());        
         scan.close();
     }
